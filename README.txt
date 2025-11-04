@@ -11,7 +11,7 @@ The command to run the program is:
 The command to run the script
 sbatch --ntasks=12 --mem=200000M  /pl/active/KellerLab/Emmanuel/gameticphasing/Fileforgithub/ProgramPhasing.sh 16942 /pl/active/KellerLab/Emmanuel/Britishandirish/pedfile123chr /pl/active/KellerLab/Emmanuel/gameticphasing/Fileforgithub /pl/active/KellerLab/Emmanuel/gameticphasing/MAF.txt
 
-3. Inputs
+3. Input parameter
 For the ease of usage a minimum number of parameters are needed. Those parameter are:
 -NbIndiv 16942 is the number of individuals in the dataset
 The number of individuals has to be for memory requirement lower than 1,000,000.
@@ -24,7 +24,9 @@ Individual 1: CC CA,
 Individual 2: CT AA, 
 and Individual 3: TT AA
 
--PathOutput /pathoftheouput/filesCHR indictae where to write the ped files after across chromosome phasing
+-PathOutput /pathoftheouput/filesCHR indicates where to write the output ped files after across chromosome phasing. In those ped file the first haplotype will be detected as coming from the same parent accross the 22 chromosomes.
 
--PathMAF /pl/active/KellerLab/Emmanuel/gameticphasing/MAF.txt is the path of the allele frequency
+-PathMAF /pl/active/KellerLab/Emmanuel/gameticphasing/MAF.txt is the path of the allele frequency. These allele frequency have to be the frequency of the dataset in the input files.
+
+
 
