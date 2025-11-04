@@ -16,8 +16,15 @@ For the ease of usage a minimum number of parameters are needed. Those parameter
 -NbIndiv 16942 is the number of individuals in the dataset
 The number of individuals has to be for memory requirement lower than 1,000,000.
 
--PathInput /pathofthehapfile/filesCHR indicates the program where to find the hap files of the 22 chromosomes. /pathofthehapfile/filesCHR1.hap should be the name of the file corresponding to chromosome 1. The hap files 
+-PathInput /pathofthehapfile/filesCHR indicates the program where to find the hap files of the 22 chromosomes. /pathofthehapfile/filesCHR1.hap should be the name of the file corresponding to chromosome 1. Each line of the hap files corresponds to a SNP and should be composed of: chromosome_number RS_number position Allele1 Allele2 then the phenotype as shown in the expemple below:
+16 rs79691782 111247 C T 0.0 0.0 0.0 1.0 1.0 1.0
+16 rs79562482 111965 A C 1.0 0.0 0.0 0.0 1.0 1.0
+For a dataset of two SNPs and three individuals being 
+Individual 1: CC CA, 
+Individual 2: CT AA, 
+and Individual 3: TT AA
 
 -PathOutput /pathoftheouput/filesCHR indictae where to write the ped files after across chromosome phasing
 
 -PathMAF /pl/active/KellerLab/Emmanuel/gameticphasing/MAF.txt is the path of the allele frequency
+
