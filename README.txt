@@ -1,4 +1,4 @@
-This repository is to make accesible the code to do across chromosome phasing. For the ease of usage a minimum number of parameters are available. Those parameter are:L
+This repository is to make accesible the code to do across chromosome phasing. For the ease of usage a minimum number of parameters are available. Those parameter are:
 -NbIndiv 16942 is the number of individuals in the dataset
 -PathInput /pathofthehapfile/filesCHR indicates the program where to find the hap of of the 22 chromosomes. /pathofthehapfile/filesCHR1.hap should be the name of the file corresponding to chromosome 1
 -PathOutput /pathoftheouput/filesCHR indictae where to write the hap file after across chromosome phasing
@@ -13,3 +13,4 @@ sbatch --ntasks=12 --mem=120M  /pl/active/KellerLab/Emmanuel/gameticphasing/File
 
 
 					
+
